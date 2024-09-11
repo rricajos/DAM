@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+  <script src="js/js.js"></script>
+  
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/design.css">
+  <title>jshopping</title>
+
+</head>
+
+
+<body id="cart-container">
+
+
+  <div id="cart-banner-container" class="col-6 col-s-12">
+    <h1 id="cart-banner-title" class="col-12 col-s-12"> EDIX BLACKFRIDAY </h1>
+
+    <img id="cart-banner-image" class="col-12 col-s-12" src="src/marketing-para-black-friday-banner.svg"
+      alt="Banner image from google images, don't use this for commercial proupose thank you" />
+  </div>
+
+
+  <!-- col-6 = width: 50%; -->
+  <!-- col-12 = width: 100%; -->
+
+  <form id="cart-form" class="col-5 col-s-12">
+
+    <h2 class="col-12 col-s-12">Carrito de la compra</h2>
+
+
+    <label class="col-3 col-s-3" for="article">Nombre del artículo: </label>
+    <input class="col-4 col-s-4" type="text" id="article" name="article" class="formattable" />
+    <div class="col-4 col-s-4"><span id="article_error"></span></div>
+
+    <label class="col-3 col-s-3" for="price">Precio del artículo: </label>
+    <input class="col-4 col-s-4" type="text" id="price" name="price" step=".01" class="formattable" />
+    <div class="col-4 col-s-4"> <span id="price_error"></span></div>
+
+    <label class="col-3 col-s-3" for="cuantity">Cantidad:</label>
+    <input class="col-4 col-s-4" type="number" id="cuantity" name="cuantity" min="1" value="1" class="formattable">
+    <div class="col-4 col-s-4"></div>
+
+    <button class="col-3 col-s-3" id="input" type="button" class="formattable"> Añadir al carrito</button>
+    <div class="col-8 col-s-8"></div>
+
+    <label class="col-5 col-s-5" for="articles">Artículos en el carrito</label>
+    <output class="col-5 col-s-5" id="articles" name="articles" class="formattable"></output>
+
+    <label class="col-5 col-s-5" for="budget"> Precio total en el carrito</label>
+    <output class="col-5 col-s-5" id="budget" name="budget" for="" class="formattable"></output>
+
+    <select class="col-7 col-s-7" id="payment" name="payment " class="formattable">
+
+      <option value="defecto" selected="selected">Método de pago</option>
+      <option value="efectivo">Efectivo</option>
+      <option value="tarjeta">Tarjeta</option>
+
+    </select>
+
+    <div id="payment_detail_container" class="col-12 col-s-12">
+      <!-- js innerHTML-->
+    </div>
+
+    <label class="col-12 col-s-12"> 
+
+      <input type="checkbox" id="consent" value="first_checkbox">
+      Acepto las condiciones de compra
+    
+    </label>
+
+    <br>
+
+    <button class="col-3 col-s-3" id="print" type="button" disabled="true">Imprimir </button>
+    <div class="col-1 col-s-1"></div>
+    <button class="col-3 col-s-3" id="restore" type="button"> Restablecer </button>
+
+  </form>
+
+  <br>
+
+</body>
+
+</html>

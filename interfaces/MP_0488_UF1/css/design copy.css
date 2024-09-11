@@ -1,0 +1,99 @@
+/* (COMPLEMENTARY) COLOR WHEEL FROM COLOR.ADOBE.COM 
+    A  #015433  (dark green)
+    B  #1CED9A  (soft green)
+    C  #03A062  (matrix green)
+    D  #771634  (dark red)
+    E  #A11D03  (red)
+*/
+
+h1{
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+}
+
+body {
+    color: whitesmoke;
+    background-color: #771634;
+    font: 1.2em "Fira Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+
+th, td {
+    position: relative;
+    width: auto;
+    height: 40px;
+    
+    padding: 10px;
+    background-color: darkgreen;
+    animation: fadeInAnimationFromLeftSide ease 0.5s;
+}
+#budget{
+    position: relative;
+    left: 40px;
+}
+td:nth-child(1) {
+    text-align: left;
+}
+
+td:hover {
+    background-color: #1CED9A;
+    
+}
+
+
+button {
+    background-color: #03A062;
+    width: 100%;
+    padding: 1em;
+}
+
+#banner-container {
+    position: relative;
+    
+}
+
+#banner-title {
+    text-align: center;
+    animation: fadeInAnimationFromLeftSide ease 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#banner-image {
+    animation: fadeInAnimationFromLeftSide ease 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimationFromLeftSide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#outputs>tr {
+    background-color: aqua;
+    height: 12em;
+}
+
+
+
+
+
+.oculto {
+    display: none;
+}
+
+
+.mostrar {
+    display: inline;
+}

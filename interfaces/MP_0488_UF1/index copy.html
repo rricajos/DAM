@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+  <script src="js/test.js"></script>
+  <script src="js/mediawiki/search.js"></script>
+<!--   
+  <link rel="stylesheet" href="css/responsive.css"> -->
+  <link rel="stylesheet" href="css/design.css">
+
+  <title>jshopping</title>
+
+</head>
+
+<body>
+
+  <div id="banner-container">
+    <h1 id="banner-title"> EDIX BLACKFRIDAY </h1>
+    <img id="banner-image" src="src/marketing-para-black-friday-banner.svg"
+      alt="Banner image from google images, don't use this for commercial proupose thank you" />
+  </div>
+
+  <form action="">
+
+  </form>
+
+  <form id="cart">
+    <table class="col-12 col-s-12">
+      <thead>
+        <tr>
+          <th colspan="2">
+            <h2>Shopping Cart</h2>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td><label for="article">Nombre del artículo: </label></td>
+          <td><input type="text" id="article" name="article" class="form" /><small id="error-message-article"></small>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="price">Precio del artículo: </label></td>
+          <td><input type="text" id="price" name="price" step=".01" class="form" /><small
+              id="error-message-price"></small></td>
+        </tr>
+
+        <tr>
+          <td><label for="cuantity">Cantidad:</label></td>
+          <td><input type="number" id="cuantity" name="cuantity" min="1" class="form"></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button id="input" type="button" class="form"> Añadir al carrito: </button>
+          </td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Artículos en el carrito</td>
+          <td><output id="articles" name="articles" class="form"></output></td>
+        </tr>
+        <tr>
+          <td>Precio total en el carrito</td>
+          <td><output id="budget" name="budget" for="" class="form"></output></td>
+        </tr>
+        <tr>
+
+          <td><select id="pago" name="pago" class="form">
+
+              <option value="defecto" selected="selected">--Selecione--</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="tarjeta">Tarjeta</option>
+
+          <td>
+
+          </td>
+          </select>
+
+          </td>
+        </tr>
+        <tr id="payment_form"></tr>
+        <tr>
+          <td><label><input type="checkbox" id="cbox" value="first_checkbox">Acepto las condiciones de
+              compra</label><br></td>
+        </tr>
+        <tr>
+          <td><button id="imprimir" type="button" disabled="true">Imprimir </button></td>
+          <td><button id="reestablecer" type="button"> Restablecer </button></td>
+
+
+        </tr>
+
+      </tfoot>
+
+
+    </table>
+
+  </form>
+
+  <br>
+
+</body>
+
+</html>

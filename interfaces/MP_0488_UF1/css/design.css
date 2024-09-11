@@ -1,0 +1,155 @@
+
+
+/* (COMPLEMENTARY) COLOR WHEEL FROM COLOR.ADOBE.COM 
+    #015433  (dark green)
+    #1CED9A  (soft green)
+    #03A062  (matrix green)
+    #771634  (dark red)
+    #A11D03  (red)
+*/
+
+#cart-form > * {
+    margin-bottom: 1em;
+}
+#cart-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    background-color: #015433;
+    border-color: #1CED9A;
+    border-style: solid;
+    border-width: 0.5em;
+    border-radius: 1em;
+}
+input {
+    font: 1.2em "Fira Sans", sans-serif;
+    color: #1CED9A;
+    background-color: #771634;
+
+    border-color: #A11D03;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 0.2em;
+}
+
+input:hover {
+    padding-right: 1em;
+}
+ input:focus {
+    padding-right: 1em;
+    border-color: #1CED9A;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 0.2em;
+}
+
+
+#cart-form > div > span {
+    align-self: flex-end;
+    font-weight: bold;
+    color:#A11D03;
+
+}
+
+#cart-form > button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#cart-form > select {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#consent {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#cart-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+
+    text-align: center;
+
+    background-color: #771634;
+    color: #1CED9A;
+    font: 1.2em "Fira Sans", sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+
+#cart-banner-container {
+    position: relative;
+
+}
+
+#cart-banner-title {
+    text-align: center;
+    animation: fadeInAnimationFromLeftSide ease 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#cart-banner-image {
+    animation: fadeInAnimationFromLeftSide ease 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeInAnimationFromLeftSide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#payment_detail_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#consent {
+    height: 1.2em;
+    width:  1.2em;
+    margin: 1.2em 0em 1.2em 0em;
+}
+
+#print:disabled {
+    background-color: #A11D03;
+
+}
